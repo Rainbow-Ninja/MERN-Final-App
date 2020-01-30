@@ -1,0 +1,142 @@
+/* GLOBAL VARS --------------------------------------------------------------------------------- */
+
+:root{
+  --blue: rgb(19,128,253);
+  --lightBlue: rgb(164, 204, 250);
+  --orange: rgb(204, 85, 0);
+  --lightOrange: rgb(250, 184, 136);
+  --grey: rgb(244,244, 244);
+}
+
+/* APP ---------------------------------------------------------------------------------------- */
+
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #09d3ac;
+}
+
+/* DashBoard ----------------------------------------------------------------------------------- */
+
+h4{
+  margin: 0 !important;
+}
+
+#dashHeader1{
+  margin-bottom: 0;
+}
+
+#dashHeader2{
+  margin-top: 0;
+}
+
+span{
+  color: var(--orange);
+}
+
+.dashGrid{
+  position: relative;
+  text-align: center;
+}
+
+div.column.dashText{
+  position: absolute;
+  width: 60%;
+  right: 0;
+  top: 50%;
+}
+
+
+img.ui.right.floated.image.lightBulb{
+  max-height: 150px;
+  position: absolute;
+  right: 2%;
+  top: 5%;
+}
+
+
+/* BUTTONS ----------------------------------------------------------------------------------- */
+
+button.ui.blue.large.fluid.button, button.ui.button, a.ui.button{
+  background-color: var(--blue);
+}
+
+button.ui.blue.large.fluid.button:hover, button.ui.button:hover, button.ui.blue.large.fluid.button a:hover, a.ui.button:hover{
+  color: var(--lightBlue);
+  background-color: var(--blue);
+}
+
+button.ui.blue.large.fluid.button a, button.ui.button, a.ui.button{
+  color: #ffffff;
+}
+
+button.ui.basic.button{
+  color: var(--blue) !important;
+  box-shadow: 0 0 0 1px var(--orange) inset;
+}
+
+button.ui.basic.button:hover{
+  color: var(--lightBlue) !important;
+  box-shadow: 0 0 0 1px var(--lightOrange) inset;
+}
+
+/* NAV ----------------------------------------------------------------------------------- */
+
+div.ui.inverted.nav.menu{
+  background-color: var(--orange);
+  border-radius: 0 0 .28571429rem .28571429rem;
+}
+
+
+/* CARDS ----------------------------------------------------------------------------------- */
+
+.cardPrice{
+  position: relative;
+  margin: -20% 25% 20% -7.5%;
+  z-index: 2;
+  background-color: hsla(212, 98%, 53%, 0.6);
+  color: white;
+}
+
+.cardPic{
+  position: relative;
+  z-index: 1;
+}
+
+
+/* OTHER ----------------------------------------------------------------------------------- */
+
+form.ui.form{
+  width: 100vw;
+}
+
+
+span:hover {
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+.container{
+  width: 95% !important;
+}
+
+body{
+  background-color: var(--grey) !important;
+}
